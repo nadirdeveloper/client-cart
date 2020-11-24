@@ -1,0 +1,23 @@
+.landing-grid{
+  background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsl(200, 5%, 13%), #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsl(200, 5%, 13%), #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: grid;
+  grid-row-gap: 2em;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  min-width: auto;
+  margin: 0;
+  transform: 'translate(-50%, -50%)';
+  padding-top: 5em;
+  direction: row;
+  overflow: scroll;
+  
+  }
+
+  
