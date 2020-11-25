@@ -20,7 +20,7 @@ import { ProductContext } from './Global/ProductsContext';
 function App() {
     //position: "fixed", display: "flex", flexDirection: "column"
     const { products } = useContext(ProductContext);
-    const { dispatch } = useContext(CartContext);
+    const { dispatch,shopingCart } = useContext(CartContext);
     const [checkout, setCheckOut] = useState(false)
     const [cart, setCart] = useState([]);
 
@@ -134,7 +134,7 @@ function App() {
                     <Navigation>
                         <Link to="/">Home</Link>
                         <Link to="/catalog">Catalog</Link>
-                        <Link to="/shoppingcart">Shopping Cart ({cart.length}) </Link>
+                        <Link to="/shoppingcart">Shopping Cart ({shopingCart.length}) </Link>
                         <Link to="/instagram">Instagram</Link>
                         {checkout ? (
                             <PayPal />
